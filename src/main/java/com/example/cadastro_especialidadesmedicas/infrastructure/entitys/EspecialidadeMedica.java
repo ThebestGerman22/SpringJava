@@ -5,29 +5,29 @@ import lombok.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-@Table (name = "EspecialidadesMedicas")
+@Table(name = "EspecialidadesMedicas")
 @Entity
 public class EspecialidadeMedica {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private  Integer id;
+    private Integer id;
 
     @Column(name = "nome")
-    private  String nome;
+    private String nome;
 
     @Column(name = "email", unique = true)
-    private  String email;
+    private String email;
 
     @Column(name = "senha", unique = true)
-    private  String senha;
+    private String senha;
 
     @Column(name = "login", unique = true)
-    private  String login;
+    private String login;
 
     @Column(name = "especialidade")
-    private  String especialidade;
-
+    private String especialidade;
 }
